@@ -250,7 +250,7 @@ if(mp2ca==1){
        ni();$("#b3").attr("src",imgx);
        kp1cb=0;pt10()};
        if (kp2cb==1){ana20();genb1();
-       ni();$("#b4").attr("src",imgx);kp2cb=0;pt20();};
+       ni();$("#b4").attr("src",imgx);kp1cb=0;kp2cb=0;pt20();};
        if (kp3cb==1){ana40();genb1();
        ni();$("#b4").attr("src",imgx);
        ni();$("#b5").attr("src",imgx);kp3cb=0;pt40();};
@@ -366,7 +366,7 @@ if(mp2ca==1){
        ni();$("#c3").attr("src",imgx);
        kp1cc=0;pt10()};
        if (kp2cc==1){ana20();genc1();
-       ni();$("#c4").attr("src",imgx);kp2cc=0;pt20();};
+       ni();$("#c4").attr("src",imgx);kp1cc=0;kp2cc=0;pt20();};
        if (kp3cc==1){ana40();genb1();
        ni();$("#c4").attr("src",imgx);
        ni();$("#c5").attr("src",imgx);kp3cc=0;pt40();};
@@ -484,7 +484,7 @@ if(mp2ca==1){
        ni();$("#d3").attr("src",imgx);
        kp1cd=0;pt10()};
        if (kp2cd==1){ana20();gend1();
-       ni();$("#d4").attr("src",imgx);kp2cd=0;pt20();};
+       ni();$("#d4").attr("src",imgx);kp1cd=0;kp2cd=0;pt20();};
        if (kp3cd==1){ana40();gend1();
        ni();$("#d4").attr("src",imgx);
        ni();$("#d5").attr("src",imgx);kp3cd=0;pt40();};
@@ -600,7 +600,7 @@ if(mp2ca==1){
        ni();$("#e3").attr("src",imgx);
        kp1ce=0;pt10()};
        if (kp2ce==1){ana20();gene1();
-       ni();$("#e4").attr("src",imgx);kp2ce=0;pt20();};
+       ni();$("#e4").attr("src",imgx);kp1ce=0;kp2ce=0;pt20();};
        if (kp3ce==1){ana40();gene1();
        ni();$("#e4").attr("src",imgx);
        ni();$("#e5").attr("src",imgx);kp3ce=0;pt40();};
@@ -711,8 +711,238 @@ if(mp2ca==1){
 
 //------------------------------------------------------------------------------------------
 // Series Columna F
+if (kp1cf==1){ana10();genf1();
+ni();$("#f2").attr("src",imgx);
+ni();$("#f3").attr("src",imgx);
+kp1cf=0;pt10()};
+if (kp2cf==1){ana20();genf1();
+ni();$("#f4").attr("src",imgx);kp1cf=0;kp2cf=0;pt20();};
+if (kp3cf==1){ana40();genf1();
+ni();$("#f4").attr("src",imgx);
+ni();$("#f5").attr("src",imgx);kp3cf=0;pt40();};
+if (kp4cf==1){ana70();genf1();
+ni();$("#f4").attr("src",imgx);
+ni();$("#f5").attr("src",imgx);
+ni();$("#f6").attr("src",imgx);kp4cf=0;pt70();};
+
+if (kp5cf==1){anb100();genf1();
+ni();$("#f4").attr("src",imgx);
+ni();$("#f5").attr("src",imgx);
+ni();$("#f6").attr("src",imgx);
+ni();$("#f7").attr("src",imgx);kp5cf=0;pt100();};
+
+if (lp1cf==1){
+imf1=$("#f1").attr("src");
+$("#f5").attr("src",imf1);
+genf1();
+ni();$("#f2").attr("src",imgx);
+ni();$("#f3").attr("src",imgx);lp1cf=0;pt10();};
+
+if (lp2cf==1){
+imf1=$("#f1").attr("src");
+$("#f6").attr("src",imf1);
+genf1();
+ni();$("#f2").attr("src",imgx);
+ni();$("#f3").attr("src",imgx);
+ni();$("#f4").attr("src",imgx);lp2cf=0;pt20();};
+
+if (lp3cf==1){
+imf1=$("#f1").attr("src");
+$("#f7").attr("src",imf1);
+genf1();
+ni();$("#f2").attr("src",imgx);
+ni();$("#f3").attr("src",imgx);
+ni();$("#f4").attr("src",imgx);
+ni();$("#f5").attr("src",imgx);lp3cf=0;pt40();};
+
+if (lp4cf==1){
+genf1();
+ni();$("#f2").attr("src",imgx);
+ni();$("#f3").attr("src",imgx);
+ni();$("#f4").attr("src",imgx);
+ni();$("#f5").attr("src",imgx);lp4cf=0;pt70();};
+
+if(mp1cf==1){
+  genf1();
+  imf1=$("#f1").attr("src");
+  imf2=$("#f2").attr("src");
+  $("#f6").attr("src",imf1);
+  $("#f7").attr("src",imf2);
+  ni();$("#f3").attr("src",imgx);
+  ni();$("#f4").attr("src",imgx);
+  ni();$("#f5").attr("src",imgx);mp1cf=0;pt10();};
+
+if(mp2cf==1){
+  genf1();
+  imf1=$("#f1").attr("src");
+  imf2=$("#f2").attr("src");
+  $("#f2").attr("src",imf1);
+  $("#f7").attr("src",imf2);
+  ni();$("#f3").attr("src",imgx);
+  ni();$("#f4").attr("src",imgx);
+  ni();$("#f5").attr("src",imgx);
+  ni();$("#f6").attr("src",imgx);mp2cf=0;pt20();};
+
+  if(mp3cf==1){
+    imf1=$("#f1").attr("src");
+    $("#f2").attr("src",imf1);
+    genf1();
+    ni();$("#f3").attr("src",imgx);
+    ni();$("#f4").attr("src",imgx);
+    ni();$("#f5").attr("src",imgx);
+    ni();$("#f6").attr("src",imgx);
+    ni();$("#f6").attr("src",imgx);mp3cf=0;pt40();};
+
+    if(np1cf==1){
+    genf1();
+    ni();$("#f4").attr("src",imgx);
+    ni();$("#f5").attr("src",imgx);
+    ni();$("#f6").attr("src",imgx);np1cf=0;pt10();};
+
+    if(np2cf==1){
+    imf1=$("#f1").attr("src");
+    $("#f2").attr("src",imf1);
+    genf1();
+    ni();$("#f4").attr("src",imgx);
+    ni();$("#f5").attr("src",imgx);
+    ni();$("#f6").attr("src",imgx);
+    ni();$("#f6").attr("src",imgx);np2cf=0;pt20(); };
+
+    if (op1cf){
+     imf1=$("#f1").attr("src");
+     $("#f2").attr("src",imf1);
+     genf1();
+     ni();$("#f5").attr("src",imgx);
+     ni();$("#f6").attr("src",imgx);
+     ni();$("#f7").attr("src",imgx);op1cf=0;pt10();};
+
+    if(qp1cf){
+      genf1();
+      ni();$("#f2").attr("src",imgx);
+      ni();$("#f3").attr("src",imgx);
+      ni();$("#f5").attr("src",imgx);
+      ni();$("#f6").attr("src",imgx);
+      ni();$("#f7").attr("src",imgx);qp1cf=0;};
+
+
 //------------------------------------------------------------------------------------------
 // Series Columna G
+if (kp1cg==1){ana10();geng1();
+  ni();$("#g2").attr("src",imgx);
+  ni();$("#g3").attr("src",imgx);
+  kp1cg=0;pt10()};
+
+if (kp2cg==1){ana20();geng1();
+   ni();$("#g4").attr("src",imgx);kp1cg=0;kp2cg=0;pt20();};
+
+if (kp3cg==1){ana40();geng1();
+  ni();$("#g4").attr("src",imgx);
+  ni();$("#g5").attr("src",imgx);kp3cg=0;pt40();};
+
+if (kp4cg==1){ana70();geng1();
+  ni();$("#g4").attr("src",imgx);
+  ni();$("#g5").attr("src",imgx);
+  ni();$("#g6").attr("src",imgx);kp4cg=0;pt70();};
+
+if (kp5cg==1){ana100();geng1();
+  ni();$("#g4").attr("src",imgx);
+  ni();$("#g5").attr("src",imgx);
+  ni();$("#g6").attr("src",imgx);
+  ni();$("#g7").attr("src",imgx);kp5cg=0;pt100();};
+
+if (lp1cg==1){
+img1=$("#g1").attr("src");
+$("#g5").attr("src",img1);
+geng1();
+ni();$("#g2").attr("src",imgx);
+ni();$("#g3").attr("src",imgx);lp1cg=0;pt10();};
+
+if (lp2cg==1){
+img1=$("#g1").attr("src");
+$("#g6").attr("src",img1);
+geng1();
+ni();$("#g2").attr("src",imgx);
+ni();$("#g3").attr("src",imgx);
+ni();$("#g4").attr("src",imgx);lp2cg=0;pt20();};
+
+if (lp3cg==1){
+img1=$("#g1").attr("src");
+$("#g7").attr("src",img1);
+geng1();
+ni();$("#g2").attr("src",imgx);
+ni();$("#g3").attr("src",imgx);
+ni();$("#g4").attr("src",imgx);
+ni();$("#g5").attr("src",imgx);lp3cg=0;pt40();};
+
+if (lp4cg==1){
+geng1();
+ni();$("#g2").attr("src",imgx);
+ni();$("#g3").attr("src",imgx);
+ni();$("#g4").attr("src",imgx);
+ni();$("#g5").attr("src",imgx);lp4cg=0;pt70();};
+
+if(mp1cg==1){
+  geng1();
+  img1=$("#g1").attr("src");
+  img2=$("#g2").attr("src");
+  $("#g6").attr("src",img1);
+  $("#g7").attr("src",img2);
+  ni();$("#g3").attr("src",imgx);
+  ni();$("#g4").attr("src",imgx);
+  ni();$("#g5").attr("src",imgx);mp1cg=0;pt10();};
+
+if(mp2cg==1){
+  geng1();
+  img1=$("#g1").attr("src");
+  img2=$("#g2").attr("src");
+  $("#g2").attr("src",img1);
+  $("#g7").attr("src",img2);
+  ni();$("#g3").attr("src",imgx);
+  ni();$("#g4").attr("src",imgx);
+  ni();$("#g5").attr("src",imgx);
+  ni();$("#g6").attr("src",imgx);mp2cg=0;pt20();};
+
+  if(mp3cg==1){
+    img1=$("#g1").attr("src");
+    $("#g2").attr("src",img1);
+    geng1();
+    ni();$("#g3").attr("src",imgx);
+    ni();$("#g4").attr("src",imgx);
+    ni();$("#g5").attr("src",imgx);
+    ni();$("#g6").attr("src",imgx);
+    ni();$("#g6").attr("src",imgx);mp3cg=0;pt40();};
+
+    if(np1cg==1){
+    geng1();
+    ni();$("#g4").attr("src",imgx);
+    ni();$("#g5").attr("src",imgx);
+    ni();$("#g6").attr("src",imgx);np1cg=0;pt10();};
+
+    if(np2cg==1){
+    img1=$("#g1").attr("src");
+    $("#g2").attr("src",img1);
+    geng1();
+    ni();$("#g4").attr("src",imgx);
+    ni();$("#g5").attr("src",imgx);
+    ni();$("#g6").attr("src",imgx);
+    ni();$("#g6").attr("src",imgx);np2cg=0;pt20(); };
+
+    if (op1cg){
+     img1=$("#g1").attr("src");
+     $("#g2").attr("src",img1);
+     geng1();
+     ni();$("#g5").attr("src",imgx);
+     ni();$("#g6").attr("src",imgx);
+     ni();$("#g7").attr("src",imgx);op1cg=0;pt10();};
+
+    if(qp1cg){
+      geng1();
+      ni();$("#g2").attr("src",imgx);
+      ni();$("#g3").attr("src",imgx);
+      ni();$("#g5").attr("src",imgx);
+      ni();$("#g6").attr("src",imgx);
+      ni();$("#g7").attr("src",imgx);qp1cg=0;};
+
 //------------------------------------------------------------------------------------------
 };// □□□□□□  Fin Modulo 5 □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
 
