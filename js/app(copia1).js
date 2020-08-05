@@ -1,39 +1,55 @@
-$(function(){ // □□□□□□ 1 Inicio Funcion de Inicialaizacion  □□□□□□
+// □□□□□□  INTRODUCCION :   Declaración de Variables Globales □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+var pts=0; var mov=0 ;var flagdrop=0; var flagini=0; var parada="no"; var mycounter; var ct="ini";
+var imgarra; var elecae; var recipe; var reogi;  var imebas="image/1.png";var idarra; var g3 ; var s=0; var m=0;
+var kp1ca; var kp2ca; var kp3ca; var kp4ca; var kp5ca;
+var lp1ca; var lp2ca; var lp3ca; var lp4ca; var mp1ca; var mp2ca; var mp3ca;
+var np1ca; var np2ca; var op1ca ; var qp1ca;
+var numa = [];numb = []; numc = [];numd =[];nume =[];numf=[]; numg = [];
+var cola = [a1,a2,a3,a4,a5,a6,a7] ;
+var colb = [b1,b2,b3,b4,b5,b6,b7] ;
+var colc = [c1,c2,c3,c4,c5,c6,c7] ;
+var cold = [d1,d2,d3,d4,d5,d6,d7] ;
+var cole = [e1,e2,e3,e4,e5,e6,e7] ;
+var colf = [f1,f2,f3,f4,f5,f6,f7] ;
+var colg = [g1,g2,g3,g4,g5,g6,g7] ;
+// □□□□□□  Fin □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
 
+// □□□□□□ 1 Inicio Funcion de Inicialaizacion  □□□□□□□□
+$(function(){
 setTimeout (flastit,2000); //***** 1.1 retardo accion color titulo (ver item 3)
+}); // □□□□□□ Fin 1   □□□□□□□□□□□
+
+// □□□□□□  2 Modulo cambio color titulo □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+function clrtitwh ()  {$(".main-titulo").animate({color:"blue"},320,function(){clrtitbl ()})}
+function clrtitbl ()  {$(".main-titulo").animate({color:"yellow"},480,function(){clrtitwh ()})}
+function flastit ()   {clrtitwh (),clrtitbl ()};
+// □□□□□□  Fin 2 □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
 
 
-}); // □□□□□□ Fin Funcion de Inicialaizacion  □□□□□□
-
- function init(){
-
+// □□□□□□ 3 Habilitacion Drag/Drop  □□□□□□□□□□□□□□□□□□□□
+function init(){
 $(".elemento").draggable({ // ****1.2 Habilita drag a elementos
 cursor:"grab",containment:".panel-tablero",distance:5,drag:function(event,ui){reogi=$(this);imgarra=$(this).attr("src");idarra=$(this).attr("id");},
 });//****fin 1.2
-
-$(".elemento").droppable({drop: function( event, ui )// ****1.3 Habilita drop a elementos
-{recipe =(this);elecae=$(this).attr("id");reasigel();} })
-
-};
-
-function reasigel(){$(recipe).attr("src",imgarra); //**** asignacion de imagenes a ID origen destino
+$(".elemento").droppable({drop: function( event, ui )// ****1.2 Habilita drop a elementos
+{recipe =(this);elecae=$(this).attr("id");reasigel();} })};
+function reasigel(){$(recipe).attr("src",imgarra); //**** 1.3 Asignacion de imagenes a ID origen destino por Drag/Drop
 $(elecae).attr("src",imgarra);
-flagdrop=1; if (flagdrop==1){deteceries();flagdrop=0;};mov=mov+1;$("#movimientos-text").text(mov);monitordrop();
-}//****fin reasigel
+flagdrop=1; if (flagdrop==1){deteceries();flagdrop=0;};mov=mov+1;$("#movimientos-text").text(mov);monitordrop();}//****fin reasigel
+// □□□□□□ Fin 3   □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
 
-// □□□□□□  5 Modulo Actividad del boton Inicar □□□□□□
+// □□□□□□  4 Acciones del boton Inicar □□□□□□
 $(".btn-reinicio").click(function(){init();asiale();cronometro();ct="uno"})
-// □□□□□□  Fin 5 □□□□□□
 
 // ⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂ Botones de Prueba
 $(".bt2").click(function(){          });
 
 $(".bt1").click(function(){reaccend()});
-
 //⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂Fin de Botoner de prueba
+// □□□□□□ Fin 4   □□□□□
 
 
-// □□□□□□  4 Modulo Logica deteccion Series + Cambio dulces + Puntos  □□□□□□
+// □□□□□□  5 Modulo Logica deteccion Series + Cambio dulces + Asigancion de Puntos  □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
 
 function deteceries(){// **** Deteciion de Imagenes
 ica1=$("#a1").attr("src");icb1=$("#b1").attr("src");icc1=$("#c1").attr("src");icd1=$("#d1").attr("src");ice1=$("#e1").attr("src");icf1=$("#f1").attr("src");icg1=$("#g1").attr("src");
@@ -51,12 +67,12 @@ if ((ica4==ica3)&&(ica5==ica4)){mp1ca=1;if (ica6==ica5){mp1ca=0;mp2ca=1;if(ica7=
 if ((ica5==ica4)&&(ica6==ica5)){np1ca=1;if (ica7==ica6){np1ca=0;np2ca=1};};
 if ((ica6==ica5)&&(ica7==ica6)){op1ca=1};
 
-if (kp1ca==1){ani10();setTimeout(acckp1ca,800);function acckp1ca(){gena1();
+if (kp1ca==1){anica10();setTimeout(acckp1ca,800);function acckp1ca(){gena1();
   ni();$("#a2").attr("src",imgx);kp2ca=0;pt20();
   ni();$("#a3").attr("src",imgx);kp2ca=0;pt20();
   kp1ca=0;pt10()};};
 
-if (kp2ca==1){ani20();gena1();
+if (kp2ca==1){anica20();gena1();
    ni();$("#a4").attr("src",imgx);kp2ca=0;pt20();};
 
 if (kp3ca==1){gena1();
@@ -169,13 +185,12 @@ if(mp2ca==1){
 
 
 
-
-};// □□□□□□  Fin Modulo 4 □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
-
+};// □□□□□□  Fin Modulo 5 □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
 
 
 
-// □□□□□□  5 Modulo logica de cambios x drag and drp □□□□□□
+
+// □□□□□□  6 Modulo logica de cambios columnas x drag and drop □□□□□□
 function monitordrop(){
 if ((idarra)=="a1"){llena1()};if ((idarra)=="a2"){llena2()};if ((idarra)=="a3"){llena3()};if ((idarra)=="a4"){llena4()};if ((idarra)=="a5"){llena5()};if ((idarra)=="a6"){llena6()};if ((idarra)=="a7"){llena7()};
 if ((idarra)=="b1"){llenb1()};if ((idarra)=="b2"){llenb2()};if ((idarra)=="b3"){llenb3()};if ((idarra)=="b4"){llenb4()};if ((idarra)=="b5"){llenb5()};if ((idarra)=="b6"){llenb6()};if ((idarra)=="b7"){llenb7()};
@@ -1008,44 +1023,13 @@ if ((idarra)=="g1"){lleng1()};if ((idarra)=="g2"){lleng2()};if ((idarra)=="g3"){
             numx=Math.floor((Math.random() * 4) + 1);
             var imgete="image/1.png"
             imgx=[imgete.slice(0,6),numx,imgete.slice(7,11)] .join("")
-            $("#f1").attr("src",imgx);
-          }; // **************** FIN FIN Lenados
+            $("#f1").attr("src",imgx);};
+// □□□□□□□□□□□   FIN 6   LLenados □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
 
 
 
 
-
-
-
-
-
-
-
-
-
-// □□□□□□  2  Declaración de Variables Globales □□□□□□
-var pts=0; var mov=0 ;var flagdrop=0; var flagini=0; var parada="no"; var mycounter; var ct="ini";
-var imgarra; var elecae; var recipe; var reogi;  var imebas="image/1.png";var idarra; var g3 ; var s=0; var m=0;
-var kp1ca; var kp2ca; var kp3ca; var kp4ca; var kp5ca;
-var lp1ca; var lp2ca; var lp3ca; var lp4ca; var mp1ca; var mp2ca; var mp3ca;
-var np1ca; var np2ca; var op1ca ; var qp1ca;
-var numa = [];numb = []; numc = [];numd =[];nume =[];numf=[]; numg = [];
-var cola = [a1,a2,a3,a4,a5,a6,a7] ;
-var colb = [b1,b2,b3,b4,b5,b6,b7] ;
-var colc = [c1,c2,c3,c4,c5,c6,c7] ;
-var cold = [d1,d2,d3,d4,d5,d6,d7] ;
-var cole = [e1,e2,e3,e4,e5,e6,e7] ;
-var colf = [f1,f2,f3,f4,f5,f6,f7] ;
-var colg = [g1,g2,g3,g4,g5,g6,g7] ;
-
-
-// □□□□□□  3 Modulo cambio color titulo□□□□□□
-function clrtitwh ()  {$(".main-titulo").animate({color:"blue"},320,function(){clrtitbl ()})}
-function clrtitbl ()  {$(".main-titulo").animate({color:"yellow"},480,function(){clrtitwh ()})}
-function flastit ()   {clrtitwh (),clrtitbl ()};
-// □□□□□□  Fin 3 □□□□□□
-
-// □□□□□□  4 Modulo Generación de numero aleatorio de 1 a 4 y asignación a cajones □□□□□□
+// □□□□□□  7 Modulo Generación de numero aleatorio de 1 a 4 y asignación a cajones □□□□□□
 function asiale(){
 
 var i ;
@@ -1108,16 +1092,16 @@ if (a7==3){$("#a7").attr("src","image/3.png");} if (b7==3){$("#b7").attr("src","
 if (a7==4){$("#a7").attr("src","image/4.png");} if (b7==4){$("#b7").attr("src","image/4.png");} if (c7==4){$("#c7").attr("src","image/4.png");} if (d7==4){$("#d7").attr("src","image/4.png");} if (e7==4){$("#e7").attr("src","image/4.png");}if (f7==4){$("#f7").attr("src","image/4.png");}if (g7==4){$("#g7").attr("src","image/4.png");}
 
 }
-// □□□□□□  Fin 4 □□□□□□
+// □□□□□□  Fin 7 □□□□□□
 
-// □□□□□□  Funciones Generales □□□□□□
-function nx (){numx=Math.floor((Math.random() * 4) + 1)}; // Genracion de Numero aleatorio de 1 A 4♪
-function ni (){nx();imgx=[imebas.slice(0,6),numx,imebas.slice(7,11)] .join("")}
-function gena1(){
-  $("#a1").css("top","-40px");
-  $("#a1").css("left","0px");
-  $("#a1").animate({top:"0px"},500);
-  ni();$("#a1").attr("src",imgx);}
+// □□□□□□  8  Funciones Generales □□□□□□
+ function nx (){numx=Math.floor((Math.random() * 4) + 1)}; // Genracion de Numero aleatorio de 1 A 4♪
+ function ni (){nx();imgx=[imebas.slice(0,6),numx,imebas.slice(7,11)] .join("")}
+  function gena1(){
+    $("#a1").css("top","-40px");
+    $("#a1").css("left","0px");
+    $("#a1").animate({top:"0px"},500);
+    ni();$("#a1").attr("src",imgx);}
   function pt10(){pts=pts+10;$("#score-text").text(pts);};
   function pt20(){pts=pts+10;$("#score-text").text(pts);};
   function pt40(){pts=pts+20;$("#score-text").text(pts);};
@@ -1127,64 +1111,55 @@ function gena1(){
   function cronometro(){ s=60; m=1;
   if ((parada=="no")&&(ct=="ini")){mycounter=setInterval(counter,50);};
   if (ct=="uno"){reaccend();ct="ini"};
-  if (parada=="si"){reaccend();};
-  };
-
+  if (parada=="si"){reaccend();};};
 
   function counter(){s=s-1;if(s==0){m=0;s=59};
   $("#timer").text("0"+m+":"+s);
   if((s==1)&&(m==0)){parada="si";clearInterval(mycounter);$("#timer").text(" Ohh tiempo agotado!");}
-  if(parada=="si"){setTimeout(accend,2000);};
-  }
+  if(parada=="si"){setTimeout(accend,2000);};  }
 
+  function accend(){
+  $(".elemento").hide();
+  $(".panel-tablero").animate({opacity:0.1,width: "-=1450"}, 500, );
+  $(".panel-score").animate({width: "+=1000"}, 3000, );
+  $(".data-info").css("color","green");
+  $(".data-titulo").css("color","white");
+  $(".data-info").css("font-size","3.2em");
+  $("#timer").text("Intentalo nuevamente!");
+  $(".btn-reinicio").text("Re-Iniciar");
+  parada="si"};
 
-
-
+  function reaccend (){
+  location.reload()};
 
  function ani10(){
 
-    $("#a2").animate({width:"100px",height:"100px"},200)
-    $("#a2").animate({width:"90px",height:"90px"},200)
-    $("#a2").effect("bounce");
-    $("#a3").animate({width:"100px",height:"100px"},200)
-    $("#a3").animate({width:"90px",height:"90px"},200)
-    $("#a3").effect("bounce"); }
+  $("#a2").animate({width:"100px",height:"100px"},200)
+  $("#a2").animate({width:"90px",height:"90px"},200)
+  $("#a2").effect("bounce");
+  $("#a3").animate({width:"100px",height:"100px"},200)
+  $("#a3").animate({width:"90px",height:"90px"},200)
+  $("#a3").effect("bounce"); }
 
-      function ani20(){
+  function ani20(){
 
-         $("#a2").animate({width:"100px",height:"100px"},200)
-         $("#a2").animate({width:"90px",height:"90px"},200)
-         $("#a2").effect("bounce");
-         $("#a3").animate({width:"100px",height:"100px"},200)
-         $("#a3").animate({width:"90px",height:"90px"},200)
-         $("#a3").effect("bounce");
-         $("#a4").animate({width:"100px",height:"100px"},200)
-         $("#a4").animate({width:"90px",height:"90px"},200)
-         $("#a4").effect("bounce");
+   $("#a2").animate({width:"100px",height:"100px"},200)
+   $("#a2").animate({width:"90px",height:"90px"},200)
+   $("#a2").effect("bounce");
+   $("#a3").animate({width:"100px",height:"100px"},200)
+   $("#a3").animate({width:"90px",height:"90px"},200)
+   $("#a3").effect("bounce");
+   $("#a4").animate({width:"100px",height:"100px"},200)
+   $("#a4").animate({width:"90px",height:"90px"},200)
+   $("#a4").effect("bounce");
            }
 
 
-function accend(){
-$(".elemento").hide();
-$(".panel-tablero").animate({opacity:0.1,width: "-=1450"}, 500, );
-$(".panel-score").animate({width: "+=1000"}, 3000, );
-$(".data-info").css("color","green");
-$(".data-titulo").css("color","white");
-$(".data-info").css("font-size","3.2em");
-$("#timer").text("Intentalo nuevamente!");
-$(".btn-reinicio").text("Re-Iniciar");
-parada="si"
-};
-
-
-function reaccend (){
-  location.reload()
-};
 
 
 
 
 
-//******************************************************************
-//                            THE END
+
+//                            FIN DEL PROGRAMA JS
 //*******************************************************************
