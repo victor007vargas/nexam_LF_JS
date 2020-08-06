@@ -1,28 +1,63 @@
 // □□□□□□  INTRODUCCION :   Declaración de Variables Globales □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
 var pts=0; var mov=0 ;var flagdrop=0; var flagini=0; var parada="no"; var mycounter; var ct="ini";
 var imgarra; var elecae; var recipe; var reogi;  var imebas="image/1.png";var idarra; var g3 ; var s=0; var m=0;
-var kp1ca; var kp2ca; var kp3ca; var kp4ca; var kp5ca;
-var lp1ca; var lp2ca; var lp3ca; var lp4ca; var mp1ca; var mp2ca; var mp3ca;
-var np1ca; var np2ca; var op1ca ; var qp1ca;
-var kp1cb; var kp2cb; var kp3cb; var kp4cb; var kp5cb;
-var lp1cb; var lp2cb; var lp3cb; var lp4cb; var mp1cb; var mp2cb; var mp3cb;
-var np1cb; var np2cb; var op1cb ; var qp1cb;
-var kp1cc; var kp2cc; var kp3cc; var kp4cc; var kp5cc;
-var lp1cc; var lp2cc; var lp3cc; var lp4cc; var mp1cc; var mp2cc; var mp3cc;
-var np1cc; var np2cc; var op1cc ; var qp1cc;
-var kp1cd; var kp2cd; var kp3cd; var kp4cd; var kp5cd;
-var lp1cd; var lp2cd; var lp3cd; var lp4cd; var mp1cd; var mp2cd; var mp3cd;
-var np1cd; var np2cd; var op1cd ; var qp1cd;
-var kp1ce; var kp2ce; var kp3ce; var kp4ce; var kp5ce;
-var lp1ce; var lp2ce; var lp3ce; var lp4ce; var mp1ce; var mp2ce; var mp3ce;
-var np1ce; var np2ce; var op1ce ; var qp1ce;
-var kp1cf; var kp2cf; var kp3cf; var kp4cf; var kp5cf;
-var lp1cf; var lp2cf; var lp3cf; var lp4cf; var mp1cf; var mp2cf; var mp3cf;
-var np1cf; var np2cf; var op1cf ; var qp1cf;
-var kp1cg; var kp2cg; var kp3cg; var kp4cg; var kp5cg;
-var lp1cg; var lp2cg; var lp3cg; var lp4cg; var mp1cg; var mp2cg; var mp3cg;
-var np1cg; var np2cg; var op1cg ; var qp1cg;
-var kp1f=0;
+var kp1ca=0; var kp2ca=0; var kp3ca=0; var kp4ca=0; var kp5ca=0;
+var lp1ca=0; var lp2ca=0; var lp3ca=0; var lp4ca=0; var mp1ca=0; var mp2ca=0; var mp3ca=0;
+var np1ca=0; var np2ca=0; var op1ca=0; var qp1ca=0;
+var kp1cb=0; var kp2cb=0; var kp3cb=0; var kp4cb=0; var kp5cb=0;
+var lp1cb=0; var lp2cb=0; var lp3cb=0; var lp4cb=0; var mp1cb=0; var mp2cb=0; var mp3cb=0;
+var np1cb=0; var np2cb=0; var op1cb=0; var qp1cb=0;
+var kp1cc=0; var kp2cc=0; var kp3cc=0; var kp4cc=0; var kp5cc=0;
+var lp1cc=0; var lp2cc=0; var lp3cc=0; var lp4cc=0; var mp1cc=0; var mp2cc=0; var mp3cc=0;
+var np1cc=0; var np2cc=0; var op1cc=0; var qp1cc=0;
+var kp1cd=0; var kp2cd=0; var kp3cd=0; var kp4cd=0; var kp5cd=0;
+var lp1cd=0; var lp2cd=0; var lp3cd=0; var lp4cd=0; var mp1cd=0; var mp2cd=0; var mp3cd=0;
+var np1cd=0; var np2cd=0; var op1cd=0; var qp1cd=0;
+var kp1ce=0; var kp2ce=0; var kp3ce=0; var kp4ce=0; var kp5ce=0;
+var lp1ce=0; var lp2ce=0; var lp3ce=0; var lp4ce=0; var mp1ce=0; var mp2ce=0; var mp3ce=0;
+var np1ce=0; var np2ce=0; var op1ce=0; var qp1ce=0;
+var kp1cf=0; var kp2cf=0; var kp3cf=0; var kp4cf=0; var kp5cf=0;
+var lp1cf=0; var lp2cf=0; var lp3cf=0; var lp4cf=0; var mp1cf=0; var mp2cf=0; var mp3cf=0;
+var np1cf=0; var np2cf=0; var op1cf=0; var qp1cf=0;
+var kp1cg=0; var kp2cg=0; var kp3cg=0; var kp4cg=0; var kp5cg=0;
+var lp1cg=0; var lp2cg=0; var lp3cg=0; var lp4cg=0; var mp1cg=0; var mp2cg=0; var mp3cg=0;
+var np1cg=0; var np2cg=0; var op1cg=0; var qp1cg=0;
+var kp1f1=0;  var kp2f1=0;  var kp3f1=0;  var kp4f1=0;  var kp5f1=0;
+var lp1f1=0;  var lp2f1=0;  var lp3f1=0;  var lp4f1=0;
+var mp1f1=0;  var mp2f1=0;  var mp3f1=0;
+var np1f1=0;  var np2f1=0;  var np2f1=0;
+var op1f1=0;  var qp1f1=0;
+var kp1f2=0;  var kp2f2=0;  var kp3f2=0;  var kp4f2=0;  var kp5f2=0;
+var lp1f2=0;  var lp2f2=0;  var lp3f2=0;  var lp4f2=0;
+var mp1f2=0;  var mp2f2=0;  var mp3f2=0;
+var np1f2=0;  var np2f2=0;  var np2f2=0;
+var op1f2=0;  var qp1f2=0;
+var kp1f3=0;  var kp2f3=0;  var kp3f3=0;  var kp4f3=0;  var kp5f3=0;
+var lp1f3=0;  var lp2f3=0;  var lp3f3=0;  var lp4f3=0;
+var mp1f3=0;  var mp2f3=0;  var mp3f3=0;
+var np1f3=0;  var np2f3=0;  var np2f3=0;
+var op1f3=0;  var qp1f3=0;
+var kp1f4=0;  var kp2f4=0;  var kp3f4=0;  var kp4f4=0;  var kp5f4=0;
+var lp1f4=0;  var lp2f4=0;  var lp3f4=0;  var lp4f4=0;
+var mp1f4=0;  var mp2f4=0;  var mp3f4=0;
+var np1f4=0;  var np2f4=0;  var np2f4=0;
+var op1f4=0;  var qp1f4=0;
+var kp1f5=0;  var kp2f5=0;  var kp3f5=0;  var kp4f5=0;  var kp5f5=0;
+var lp1f5=0;  var lp2f5=0;  var lp3f5=0;  var lp4f5=0;
+var mp1f5=0;  var mp2f5=0;  var mp3f5=0;
+var np1f5=0;  var np2f5=0;  var np2f5=0;
+var op1f5=0;  var qp1f5=0;
+var kp1f6=0;  var kp2f6=0;  var kp3f6=0;  var kp4f6=0;  var kp5f6=0;
+var lp1f6=0;  var lp2f6=0;  var lp3f6=0;  var lp4f6=0;
+var mp1f6=0;  var mp2f6=0;  var mp3f6=0;
+var np1f6=0;  var np2f6=0;  var np2f6=0;
+var op1f6=0;  var qp1f6=0;
+var kp1f7=0;  var kp2f7=0;  var kp3f7=0;  var kp4f7=0;  var kp5f7=0;
+var lp1f7=0;  var lp2f7=0;  var lp3f7=0;  var lp4f7=0;
+var mp1f7=0;  var mp2f7=0;  var mp3f7=0;
+var np1f7=0;  var np2f7=0;  var np2f7=0;
+var op1f7=0;  var qp1f7=0;
+
 
 var numa = [];numb = []; numc = [];numd =[];nume =[];numf=[]; numg = [];
 var cola = [a1,a2,a3,a4,a5,a6,a7] ;
@@ -64,7 +99,9 @@ $(".btn-reinicio").click(function(){init();asiale();cronometro();ct="uno"})
 // ⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂ Botones de Prueba
 $(".bt2").click(function(){ alert("Variable kp1f:"+kp1f)         });
 
-$(".bt1").click(function(){ alert("Imagen a1:"+ica1+"\nImagen b1:"+icb1+"\nImagen c1:"+icc1)         });
+$(".bt1").click(function(){
+alert("Imagen a1:"+ica1+"\nImagen b1:"+icb1+"\nImagen c1:"+icc1+"\nImagen d1:"+icd1+
+"\nImagen e1:"+ice1+"\nImagen f1:"+icf1+"\nImagen g1:"+icg1)});
 //⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂Fin de Botoner de prueba
 // □□□□□□ Fin 4   □□□□□
 
@@ -127,12 +164,19 @@ if ((icg5==icg4)&&(icg6==icg5)){np1cg=1;if (icg7==icg6){np1cg=0;np2cg=1};};
 if ((icg6==icg5)&&(icg7==icg6)){op1cg=1};
 //--------------------------------------------------------------------
 //---------------- Logica  imagenes fila 1 -------------------
-if ((icb2==ica1)&&(icc1==icb1)){kp1f=1;if (icd1==icc1){kp1f=0;kp2f=1;if(ice1==icd1){kp2f=0;kp3f=1;if(icf1==ice1){kp3f=0;kp4f=1;if(icg1==icf1){kp4f=0;kp5f=1};};};};};
-//if ((ica3==ica2)&&(ica4==ica3)){lp1ca=1;if (ica5==ica4){lp1ca=0;lp2ca=1;if(ica6==ica5){lp2ca=0;lp3ca=1;if(ica7===ica6){lp3ca=0;lp4ca=1};};};};
-//if ((ica4==ica3)&&(ica5==ica4)){mp1ca=1;if (ica6==ica5){mp1ca=0;mp2ca=1;if(ica7==ica6){mp2ca=0;mp3ca=1};};};
-//if ((ica5==ica4)&&(ica6==ica5)){np1ca=1;if (ica7==ica6){np1ca=0;np2ca=1};};
-//if ((ica6==ica5)&&(ica7==ica6)){op1ca=1};
+if ((icb1==ica1)&&(icc1==icb1)){kp1f1=1;if (icd1==icc1){kp1f1=0;kp2f1=1;if(ice1==icd1){kp2f1=0;kp3f1=1;if(icf1==ice1){kp3f1=0;kp4f1=1;if(icg1==icf1){kp4f1=0;kp5f1=1};};};};};
+if ((icc1==icb1)&&(icd1==icc1)){lp1f1=1;if (ice1==icd1){lp1f1=0;lp2f1=1;if(icf1==ice1){lp2f1=0;lp3f1=1;if(icg1==icf1){lp3f1=0;lp4f1=1;};};};};
+if ((icd1==icc1)&&(ice1==icd1)){mp1f1=1;if (icf1==ice1){mp1f1=0;mp2f1=1;if(icg1==icf1){mp2f1=0;mp3f1=1};};};
+if ((ice1==icd1)&&(icf1==ice1)){np1f1=1;if (icg1==icf1){np1f1=0;np2f1=1};};
+if ((icf1==ice1)&&(icg1==icf1)){op1f1=1};
+if ((icb1==ica1)&&(icc1==icb1)){op1f1=1};
 //---------------- Logica  imagenes fila 2 -------------------
+if ((icb2==ica2)&&(icc2==icb2)){kp1f2=1;if (icd2==icc2){kp1f2=0;kp2f2=1;if(ice2==icd2){kp2f2=0;kp3f2=1;if(icf2==ice2){kp3f2=0;kp4f2=1;if(icg2==icf2){kp4f2=0;kp5f2=1};};};};};
+if ((icc2==icb2)&&(icd2==icc2)){lp1f2=1;if (ice2==icd2){lp1f2=0;lp2f2=1;if(icf2==ice2){lp2f2=0;lp3f2=1;if(icg2==icf2){lp3f2=0;lp4f2=1;};};};};
+if ((icd2==icc2)&&(ice2==icd2)){mp1f2=1;if (icf2==ice2){mp1f2=0;mp2f2=1;if(icg2==icf2){mp2f2=0;mp3f2=1};};};
+if ((ice2==icd2)&&(icf2==ice2)){np1f2=1;if (icg2==icf2){np1f2=0;np2f2=1};};
+if ((icf2==ice2)&&(icg2==icf2)){op1f2=1};
+if ((icb2==ica2)&&(icc2==icb2)){op1f2=1};
 
   //---------------- Logica  imagenes fila 3 -------------------
 
@@ -146,14 +190,40 @@ if ((icb2==ica1)&&(icc1==icb1)){kp1f=1;if (icd1==icc1){kp1f=0;kp2f=1;if(ice1==ic
 
 
 // Series Fila 1
-if (kp1f==1){ana10();genf1();
-    kp1f=0;pt10()};
-
+if (kp1f1==1){ana10();gent1()
+    kp1f1=0;pt10()};
+if (kp2f1==1){ana10();gent2();
+    kp2f1=0;pt20()};
+if (kp3f1==1){ana10();gent3();
+    kp3f1=0;pt40()};
+if (kp4f1==1){ana10();gent4();
+    kp4f1=0;pt70()};
+if (kp5f1==1){ana10();gent5();
+    kp5f1=0;pt70()};
+if (lp1f1==1){ana10();gens1();
+    lp1f1=0;pt10()};
+if (lp2f1==1){ana10();gens2();
+    lp2f1=0;pt20()};
+if (lp3f1==1){ana10();gens3();
+    lp3f1=0;pt40()}
+if (mp1f1==1){ana10();genr1();
+    mp1f1=0;pt10()};
+if (mp2f1==1){ana10();genr2();
+    mp2f1=0;pt20()}
+if (mp3f1==1){ana10();genr3();
+    mp3f1=0;pt40()}
+if (np1f1==1){ana10();genu1();
+    np1f1=0;pt10()}
+if (np2f1==1){ana10();genu2();
+    np2f1=0;pt20()}
+if (op1f1==1){ana10();genv1();
+    op1f1=0;pt10()}
 //---------------------------------------------------------
 
 
+
 // Series Columna A
-if (kp1ca==1){ana10();gena1();
+if (kp1ca==1){ana10();setTimeout(gena1,500);gena1();
   ni();$("#a2").attr("src",imgx);
   ni();$("#a3").attr("src",imgx);
   kp1ca=0;pt10()};
@@ -1890,9 +1960,22 @@ function gend1(){$("#d1").css("top","-40px");$("#d1").css("left","0px");$("#d1")
 function gene1(){$("#e1").css("top","-40px");$("#e1").css("left","0px");$("#e1").animate({top:"0px"},500); ni();$("#e1").attr("src",imgx);}
 function genf1(){$("#f1").css("top","-40px");$("#f1").css("left","0px");$("#f1").animate({top:"0px"},500); ni();$("#f1").attr("src",imgx);}
 function geng1(){$("#g1").css("top","-40px");$("#g1").css("left","0px");$("#g1").animate({top:"0px"},500); ni();$("#g1").attr("src",imgx);}
-function genf1(){ gena1();genb1();genc1();}
 
-
+function gent1(){ gena1();genb1();genc1();}
+function gent2(){ gena1();genb1();genc1();gend1();}
+function gent3(){ gena1();genb1();genc1();gend1();gene1();}
+function gent4(){ gena1();genb1();genc1();gend1();gene1();genf1();}
+function gent5(){ gena1();genb1();genc1();gend1();gene1();genf1();geng1();}
+function gens1(){ genb1();genc1();gend1();}
+function gens2(){ genb1();genc1();gend1();gene1();}
+function gens3(){ genb1();genc1();gend1();gene1();genf1();}
+function gens4(){ genb1();genc1();gend1();gene1();genf1();geng1();}
+function genr1(){ genc1();gend1();gene1();}
+function genr2(){ genc1();gend1();gene1();genf1();}
+function genr3(){ genc1();gend1();gene1();genf1();geng1();}
+function genu1(){ gend1();gene1();genf1();}
+function genu2(){ gend1();gene1();genf1();geng1();}
+function genv1(){ gena1();genb1();genc1();gene1();genf1();geng1();}
 
 
 
@@ -1906,7 +1989,7 @@ function genf1(){ gena1();genb1();genc1();}
 
 
   function cronometro(){ s=60; m=1;
-  if ((parada=="no")&&(ct=="ini")){mycounter=setInterval(counter,500);};
+  if ((parada=="no")&&(ct=="ini")){mycounter=setInterval(counter,1000);};
   if (ct=="uno"){reaccend();ct="ini"};
   if (parada=="si"){reaccend();};
   };
@@ -1940,7 +2023,6 @@ function ana20(){};
 function ana40(){};
 function ana70(){};
 function ana100(){};
-
 
 
 
