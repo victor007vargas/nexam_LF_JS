@@ -4,6 +4,25 @@ var imgarra; var elecae; var recipe; var reogi;  var imebas="image/1.png";var id
 var kp1ca; var kp2ca; var kp3ca; var kp4ca; var kp5ca;
 var lp1ca; var lp2ca; var lp3ca; var lp4ca; var mp1ca; var mp2ca; var mp3ca;
 var np1ca; var np2ca; var op1ca ; var qp1ca;
+var kp1cb; var kp2cb; var kp3cb; var kp4cb; var kp5cb;
+var lp1cb; var lp2cb; var lp3cb; var lp4cb; var mp1cb; var mp2cb; var mp3cb;
+var np1cb; var np2cb; var op1cb ; var qp1cb;
+var kp1cc; var kp2cc; var kp3cc; var kp4cc; var kp5cc;
+var lp1cc; var lp2cc; var lp3cc; var lp4cc; var mp1cc; var mp2cc; var mp3cc;
+var np1cc; var np2cc; var op1cc ; var qp1cc;
+var kp1cd; var kp2cd; var kp3cd; var kp4cd; var kp5cd;
+var lp1cd; var lp2cd; var lp3cd; var lp4cd; var mp1cd; var mp2cd; var mp3cd;
+var np1cd; var np2cd; var op1cd ; var qp1cd;
+var kp1ce; var kp2ce; var kp3ce; var kp4ce; var kp5ce;
+var lp1ce; var lp2ce; var lp3ce; var lp4ce; var mp1ce; var mp2ce; var mp3ce;
+var np1ce; var np2ce; var op1ce ; var qp1ce;
+var kp1cf; var kp2cf; var kp3cf; var kp4cf; var kp5cf;
+var lp1cf; var lp2cf; var lp3cf; var lp4cf; var mp1cf; var mp2cf; var mp3cf;
+var np1cf; var np2cf; var op1cf ; var qp1cf;
+var kp1cg; var kp2cg; var kp3cg; var kp4cg; var kp5cg;
+var lp1cg; var lp2cg; var lp3cg; var lp4cg; var mp1cg; var mp2cg; var mp3cg;
+var np1cg; var np2cg; var op1cg ; var qp1cg;
+
 var numa = [];numb = []; numc = [];numd =[];nume =[];numf=[]; numg = [];
 var cola = [a1,a2,a3,a4,a5,a6,a7] ;
 var colb = [b1,b2,b3,b4,b5,b6,b7] ;
@@ -53,38 +72,78 @@ $(".bt1").click(function(){reaccend()});
 
 function deteceries(){// **** Deteciion de Imagenes
 ica1=$("#a1").attr("src");icb1=$("#b1").attr("src");icc1=$("#c1").attr("src");icd1=$("#d1").attr("src");ice1=$("#e1").attr("src");icf1=$("#f1").attr("src");icg1=$("#g1").attr("src");
-ica3=$("#a3").attr("src");icb3=$("#b3").attr("src");icc3=$("#c3").attr("src");icd2=$("#d2").attr("src");ice2=$("#e2").attr("src");icf2=$("#f2").attr("src");icg2=$("#g2").attr("src");
-ica2=$("#a2").attr("src");icb2=$("#b2").attr("src");icc2=$("#c2").attr("src");icd3=$("#d3").attr("src");ice3=$("#e3").attr("src");icf3=$("#f3").attr("src");icg3=$("#g3").attr("src");
+ica3=$("#a2").attr("src");icb2=$("#b2").attr("src");icc2=$("#c2").attr("src");icd2=$("#d2").attr("src");ice2=$("#e2").attr("src");icf2=$("#f2").attr("src");icg2=$("#g2").attr("src");
+ica2=$("#a2").attr("src");icb3=$("#b3").attr("src");icc3=$("#c3").attr("src");icd3=$("#d3").attr("src");ice3=$("#e3").attr("src");icf3=$("#f3").attr("src");icg3=$("#g3").attr("src");
 ica4=$("#a4").attr("src");icb4=$("#b4").attr("src");icc4=$("#c4").attr("src");icd4=$("#d4").attr("src");ice4=$("#e4").attr("src");icf4=$("#f4").attr("src");icg4=$("#g4").attr("src");
 ica5=$("#a5").attr("src");icb5=$("#b5").attr("src");icc5=$("#c5").attr("src");icd5=$("#d5").attr("src");ice5=$("#e5").attr("src");icf5=$("#f5").attr("src");icg5=$("#g5").attr("src");
 ica6=$("#a6").attr("src");icb6=$("#b6").attr("src");icc6=$("#c6").attr("src");icd6=$("#d6").attr("src");ice6=$("#e6").attr("src");icf6=$("#f6").attr("src");icg6=$("#g6").attr("src");
 ica7=$("#a7").attr("src");icb7=$("#b7").attr("src");icc7=$("#c7").attr("src");icd7=$("#d7").attr("src");ice7=$("#e7").attr("src");icf7=$("#f7").attr("src");icg7=$("#g7").attr("src");
 // ****   Logica series col a
 
+
+
+//---------------- Logica  imagenes columan a -------------------
 if ((ica2==ica1)&&(ica3==ica2)){kp1ca=1;if (ica4==ica3){kp1ca=0;kp2ca=1;if(ica5==ica4){kp2ca=0;kp3ca=1;if(ica6==ica5){kp3ca=0;kp4ca=1;if(ica7==ica6){kp4ca=0;kp5ca=1};};};};};
 if ((ica3==ica2)&&(ica4==ica3)){lp1ca=1;if (ica5==ica4){lp1ca=0;lp2ca=1;if(ica6==ica5){lp2ca=0;lp3ca=1;if(ica7===ica6){lp3ca=0;lp4ca=1};};};};
 if ((ica4==ica3)&&(ica5==ica4)){mp1ca=1;if (ica6==ica5){mp1ca=0;mp2ca=1;if(ica7==ica6){mp2ca=0;mp3ca=1};};};
 if ((ica5==ica4)&&(ica6==ica5)){np1ca=1;if (ica7==ica6){np1ca=0;np2ca=1};};
 if ((ica6==ica5)&&(ica7==ica6)){op1ca=1};
+//---------------- logica imagenes columan b -------------------
+if ((icb2==icb1)&&(icb3==icb2)){kp1cb=1;if (icb4==icb3){kp1cb=0;kp2cb=1;if(icb5==icb4){kp2cb=0;kp3cb=1;if(icb6==icb5){kp3cb=0;kp4cb=1;if(icb7==icb6){kp4cb=0;kp5cb=1};};};};};
+if ((icb3==icb2)&&(icb4==icb3)){lp1cb=1;if (icb5==icb4){lp1cb=0;lp2cb=1;if(icb6==icb5){lp2cb=0;lp3cb=1;if(icb7===icb6){lp3cb=0;lp4cb=1};};};};
+if ((icb4==icb3)&&(icb5==icb4)){mp1cb=1;if (icb6==icb5){mp1cb=0;mp2cb=1;if(icb7==icb6){mp2cb=0;mp3cb=1};};};
+if ((icb5==icb4)&&(icb6==icb5)){np1cb=1;if (icb7==icb6){np1cb=0;np2cb=1};};
+if ((icb6==icb5)&&(icb7==icb6)){op1cb=1};
+//---------------- logica imagenes columan c -------------------
+if ((icc2==icc1)&&(icc3==icc2)){kp1cc=1;if (icc4==icc3){kp1cc=0;kp2cc=1;if(icc5==icc4){kp2cc=0;kp3cc=1;if(icc6==icc5){kp3cc=0;kp4cc=1;if(icc7==icc6){kp4cc=0;kp5cc=1};};};};};
+if ((icc3==icc2)&&(icc4==icc3)){lp1cc=1;if (icc5==icc4){lp1cc=0;lp2cc=1;if(icc6==icc5){lp2cc=0;lp3cc=1;if(icc7===icc6){lp3cc=0;lp4cc=1};};};};
+if ((icc4==icc3)&&(icc5==icc4)){mp1cc=1;if (icc6==icc5){mp1cc=0;mp2cc=1;if(icc7==icc6){mp2cc=0;mp3cc=1};};};
+if ((icc5==icc4)&&(icc6==icc5)){np1cc=1;if (icc7==icc6){np1cc=0;np2cc=1};};
+if ((icc6==icc5)&&(icc7==icc6)){op1cc=1};
+//---------------- logica imagenes columan d -------------------
+if ((icd2==icd1)&&(icd3==icd2)){kp1cd=1;if (icd4==icd3){kp1cd=0;kp2cd=1;if(icd5==icd4){kp2cd=0;kp3cd=1;if(icd6==icd5){kp3cd=0;kp4cd=1;if(icd7==icd6){kp4cd=0;kp5cd=1};};};};};
+if ((icd3==icd2)&&(icd4==icd3)){lp1cd=1;if (icd5==icd4){lp1cd=0;lp2cd=1;if(icd6==icd5){lp2cd=0;lp3cd=1;if(icd7===icd6){lp3cd=0;lp4cd=1};};};};
+if ((icd4==icd3)&&(icd5==icd4)){mp1cd=1;if (icd6==icd5){mp1cd=0;mp2cd=1;if(icd7==icd6){mp2cd=0;mp3cd=1};};};
+if ((icd5==icd4)&&(icd6==icd5)){np1cd=1;if (icd7==icd6){np1cd=0;np2cd=1};};
+if ((icd6==icd5)&&(icd7==icd6)){op1cd=1};
+//---------------- logica imagenes columan e -------------------
+if ((ice2==ice1)&&(ice3==ice2)){kp1ce=1;if (ice4==ice3){kp1ce=0;kp2ce=1;if(ice5==ice4){kp2ce=0;kp3ce=1;if(ice6==ice5){kp3ce=0;kp4ce=1;if(ice7==ice6){kp4ce=0;kp5ce=1};};};};};
+if ((ice3==ice2)&&(ice4==ice3)){lp1ce=1;if (ice5==ice4){lp1ce=0;lp2ce=1;if(ice6==ice5){lp2ce=0;lp3ce=1;if(ice7===ice6){lp3ce=0;lp4ce=1};};};};
+if ((ice4==ice3)&&(ice5==ice4)){mp1ce=1;if (ice6==ice5){mp1ce=0;mp2ce=1;if(ice7==ice6){mp2ce=0;mp3ce=1};};};
+if ((ice5==ice4)&&(ice6==ice5)){np1ce=1;if (ice7==ice6){np1ce=0;np2ce=1};};
+if ((ice6==ice5)&&(ice7==ice6)){op1ce=1};
+//---------------- logica imagenes columan f -------------------
+if ((icf2==icf1)&&(icf3==icf2)){kp1cf=1;if (icf4==icf3){kp1cf=0;kp2cf=1;if(icf5==icf4){kp2cf=0;kp3cf=1;if(icf6==icf5){kp3cf=0;kp4cf=1;if(icf7==icf6){kp4cf=0;kp5cf=1};};};};};
+if ((icf3==icf2)&&(icf4==icf3)){lp1cf=1;if (icf5==icf4){lp1cf=0;lp2cf=1;if(icf6==icf5){lp2cf=0;lp3cf=1;if(icf7===icf6){lp3cf=0;lp4cf=1};};};};
+if ((icf4==icf3)&&(icf5==icf4)){mp1cf=1;if (icf6==icf5){mp1cf=0;mp2cf=1;if(icf7==icf6){mp2cf=0;mp3cf=1};};};
+if ((icf5==icf4)&&(icf6==icf5)){np1cf=1;if (icf7==icf6){np1cf=0;np2cf=1};};
+if ((icf6==icf5)&&(icf7==icf6)){op1cf=1};
+//---------------- logica imagenes columan g -------------------
+if ((icg2==icg1)&&(icg3==icg2)){kp1cg=1;if (icg4==icg3){kp1cg=0;kp2cg=1;if(icg5==icg4){kp2cg=0;kp3cg=1;if(icg6==icg5){kp3cg=0;kp4cg=1;if(icg7==icg6){kp4cg=0;kp5cg=1};};};};};
+if ((icg3==icg2)&&(icg4==icg3)){lp1cg=1;if (icg5==icg4){lp1cg=0;lp2cg=1;if(icg6==icg5){lp2cg=0;lp3cg=1;if(icg7===icg6){lp3cg=0;lp4cg=1};};};};
+if ((icg4==icg3)&&(icg5==icg4)){mp1cg=1;if (icg6==icg5){mp1cg=0;mp2cg=1;if(icg7==icg6){mp2cg=0;mp3cg=1};};};
+if ((icg5==icg4)&&(icg6==icg5)){np1cg=1;if (icg7==icg6){np1cg=0;np2cg=1};};
+if ((icg6==icg5)&&(icg7==icg6)){op1cg=1};
+//--------------------------------------------------------------------
+// Series Columna A
+if (kp1ca==1){ana10();gena1();
+  ni();$("#a2").attr("src",imgx);
+  ni();$("#a3").attr("src",imgx);
+  kp1ca=0;pt10()};
 
-if (kp1ca==1){anica10();setTimeout(acckp1ca,800);function acckp1ca(){gena1();
-  ni();$("#a2").attr("src",imgx);kp2ca=0;pt20();
-  ni();$("#a3").attr("src",imgx);kp2ca=0;pt20();
-  kp1ca=0;pt10()};};
-
-if (kp2ca==1){anica20();gena1();
+if (kp2ca==1){ana20();gena1();
    ni();$("#a4").attr("src",imgx);kp2ca=0;pt20();};
 
-if (kp3ca==1){gena1();
+if (kp3ca==1){ana40();gena1();
   ni();$("#a4").attr("src",imgx);
   ni();$("#a5").attr("src",imgx);kp3ca=0;pt40();};
 
-if (kp4ca==1){gena1();
+if (kp4ca==1){ana70();gena1();
   ni();$("#a4").attr("src",imgx);
   ni();$("#a5").attr("src",imgx);
   ni();$("#a6").attr("src",imgx);kp4ca=0;pt70();};
 
-if (kp5ca==1){gena1();
+if (kp5ca==1){ana100();gena1();
   ni();$("#a4").attr("src",imgx);
   ni();$("#a5").attr("src",imgx);
   ni();$("#a6").attr("src",imgx);
@@ -182,9 +241,709 @@ if(mp2ca==1){
       ni();$("#a5").attr("src",imgx);
       ni();$("#a6").attr("src",imgx);
       ni();$("#a7").attr("src",imgx);qp1ca=0;};
+//------------------------------------------------------------------------------------------
+// Series Columna B
 
 
+       if (kp1cb==1){ana10();genb1();
+       ni();$("#b2").attr("src",imgx);
+       ni();$("#b3").attr("src",imgx);
+       kp1cb=0;pt10()};
+       if (kp2cb==1){ana20();genb1();
+       ni();$("#b4").attr("src",imgx);kp1cb=0;kp2cb=0;pt20();};
+       if (kp3cb==1){ana40();genb1();
+       ni();$("#b4").attr("src",imgx);
+       ni();$("#b5").attr("src",imgx);kp3cb=0;pt40();};
+       if (kp4cb==1){ana70();genb1();
+       ni();$("#b4").attr("src",imgx);
+       ni();$("#b5").attr("src",imgx);
+       ni();$("#b6").attr("src",imgx);kp4cb=0;pt70();};
 
+       if (kp5cb==1){anb100();genb1();
+       ni();$("#b4").attr("src",imgx);
+       ni();$("#b5").attr("src",imgx);
+       ni();$("#b6").attr("src",imgx);
+       ni();$("#b7").attr("src",imgx);kp5cb=0;pt100();};
+
+       if (lp1cb==1){
+       imb1=$("#b1").attr("src");
+       $("#b5").attr("src",imb1);
+       genb1();
+       ni();$("#b2").attr("src",imgx);
+       ni();$("#b3").attr("src",imgx);lp1cb=0;pt10();};
+
+       if (lp2cb==1){
+       imb1=$("#b1").attr("src");
+       $("#b6").attr("src",imb1);
+       genb1();
+       ni();$("#b2").attr("src",imgx);
+       ni();$("#b3").attr("src",imgx);
+       ni();$("#b4").attr("src",imgx);lp2cb=0;pt20();};
+
+       if (lp3cb==1){
+       imb1=$("#b1").attr("src");
+       $("#b7").attr("src",imb1);
+       genb1();
+       ni();$("#b2").attr("src",imgx);
+       ni();$("#b3").attr("src",imgx);
+       ni();$("#b4").attr("src",imgx);
+       ni();$("#b5").attr("src",imgx);lp3cb=0;pt40();};
+
+       if (lp4cb==1){
+       genb1();
+       ni();$("#b2").attr("src",imgx);
+       ni();$("#b3").attr("src",imgx);
+       ni();$("#b4").attr("src",imgx);
+       ni();$("#b5").attr("src",imgx);lp4cb=0;pt70();};
+
+       if(mp1cb==1){
+         genb1();
+         imb1=$("#b1").attr("src");
+         imb2=$("#b2").attr("src");
+         $("#b6").attr("src",imb1);
+         $("#b7").attr("src",imb2);
+         ni();$("#b3").attr("src",imgx);
+         ni();$("#b4").attr("src",imgx);
+         ni();$("#b5").attr("src",imgx);mp1cb=0;pt10();};
+
+       if(mp2cb==1){
+         genb1();
+         imb1=$("#b1").attr("src");
+         imb2=$("#b2").attr("src");
+         $("#b2").attr("src",imb1);
+         $("#b7").attr("src",imb2);
+         ni();$("#b3").attr("src",imgx);
+         ni();$("#b4").attr("src",imgx);
+         ni();$("#b5").attr("src",imgx);
+         ni();$("#b6").attr("src",imgx);mp2cb=0;pt20();};
+
+         if(mp3cb==1){
+           imb1=$("#b1").attr("src");
+           $("#b2").attr("src",imb1);
+           genb1();
+           ni();$("#b3").attr("src",imgx);
+           ni();$("#b4").attr("src",imgx);
+           ni();$("#b5").attr("src",imgx);
+           ni();$("#b6").attr("src",imgx);
+           ni();$("#b6").attr("src",imgx);mp3cb=0;pt40();};
+
+           if(np1cb==1){
+           genb1();
+           ni();$("#b4").attr("src",imgx);
+           ni();$("#b5").attr("src",imgx);
+           ni();$("#b6").attr("src",imgx);np1cb=0;pt10();};
+
+           if(np2cb==1){
+           imb1=$("#b1").attr("src");
+           $("#b2").attr("src",imb1);
+           genb1();
+           ni();$("#b4").attr("src",imgx);
+           ni();$("#b5").attr("src",imgx);
+           ni();$("#b6").attr("src",imgx);
+           ni();$("#b6").attr("src",imgx);np2cb=0;pt20(); };
+
+           if (op1cb){
+            imb1=$("#b1").attr("src");
+            $("#b2").attr("src",imb1);
+            genb1();
+            ni();$("#b5").attr("src",imgx);
+            ni();$("#b6").attr("src",imgx);
+            ni();$("#b7").attr("src",imgx);op1cb=0;pt10();};
+
+           if(qp1cb){
+             genb1();
+             ni();$("#b2").attr("src",imgx);
+             ni();$("#b3").attr("src",imgx);
+             ni();$("#b5").attr("src",imgx);
+             ni();$("#b6").attr("src",imgx);
+             ni();$("#b7").attr("src",imgx);qp1cb=0;};
+//------------------------------------------------------------------------------------------
+// Series Columna C
+
+
+       if (kp1cc==1){ana10();genc1();
+       ni();$("#c2").attr("src",imgx);
+       ni();$("#c3").attr("src",imgx);
+       kp1cc=0;pt10()};
+       if (kp2cc==1){ana20();genc1();
+       ni();$("#c4").attr("src",imgx);kp1cc=0;kp2cc=0;pt20();};
+       if (kp3cc==1){ana40();genb1();
+       ni();$("#c4").attr("src",imgx);
+       ni();$("#c5").attr("src",imgx);kp3cc=0;pt40();};
+       if (kp4cc==1){ana70();genc1();
+       ni();$("#c4").attr("src",imgx);
+       ni();$("#c5").attr("src",imgx);
+       ni();$("#c6").attr("src",imgx);kp4cc=0;pt70();};
+
+       if (kp5cc==1){anb100();genc1();
+       ni();$("#c4").attr("src",imgx);
+       ni();$("#c5").attr("src",imgx);
+       ni();$("#c6").attr("src",imgx);
+       ni();$("#c7").attr("src",imgx);kp5cc=0;pt100();};
+
+       if (lp1cc==1){
+       imc1=$("#c1").attr("src");
+       $("#c5").attr("src",imc1);
+       genc1();
+       ni();$("#c2").attr("src",imgx);
+       ni();$("#c3").attr("src",imgx);lp1cc=0;pt10();};
+
+       if (lp2cc==1){
+       imc1=$("#c1").attr("src");
+       $("#c6").attr("src",imc1);
+       genc1();
+       ni();$("#c2").attr("src",imgx);
+       ni();$("#c3").attr("src",imgx);
+       ni();$("#c4").attr("src",imgx);lp2cc=0;pt20();};
+
+       if (lp3cc==1){
+       imc1=$("#c1").attr("src");
+       $("#c7").attr("src",imc1);
+       genc1();
+       ni();$("#c2").attr("src",imgx);
+       ni();$("#c3").attr("src",imgx);
+       ni();$("#c4").attr("src",imgx);
+       ni();$("#c5").attr("src",imgx);lp3cc=0;pt40();};
+
+       if (lp4cc==1){
+       genc1();
+       ni();$("#c2").attr("src",imgx);
+       ni();$("#c3").attr("src",imgx);
+       ni();$("#c4").attr("src",imgx);
+       ni();$("#c5").attr("src",imgx);lp4cc=0;pt70();};
+
+       if(mp1cc==1){
+         genc1();
+         imc1=$("#c1").attr("src");
+         imc2=$("#c2").attr("src");
+         $("#c6").attr("src",imc1);
+         $("#c7").attr("src",imc2);
+         ni();$("#c3").attr("src",imgx);
+         ni();$("#c4").attr("src",imgx);
+         ni();$("#c5").attr("src",imgx);mp1cc=0;pt10();};
+
+       if(mp2cc==1){
+         genc1();
+         imc1=$("#c1").attr("src");
+         imc2=$("#c2").attr("src");
+         $("#c2").attr("src",imc1);
+         $("#c7").attr("src",imc2);
+         ni();$("#c3").attr("src",imgx);
+         ni();$("#c4").attr("src",imgx);
+         ni();$("#c5").attr("src",imgx);
+         ni();$("#c6").attr("src",imgx);mp2cc=0;pt20();};
+
+         if(mp3cc==1){
+           imc1=$("#c1").attr("src");
+           $("#c2").attr("src",imc1);
+           genc1();
+           ni();$("#c3").attr("src",imgx);
+           ni();$("#c4").attr("src",imgx);
+           ni();$("#c5").attr("src",imgx);
+           ni();$("#c6").attr("src",imgx);
+           ni();$("#c6").attr("src",imgx);mp3cc=0;pt40();};
+
+           if(np1cc==1){
+           genc1();
+           ni();$("#c4").attr("src",imgx);
+           ni();$("#c5").attr("src",imgx);
+           ni();$("#c6").attr("src",imgx);np1cc=0;pt10();};
+
+           if(np2cc==1){
+           imc1=$("#c1").attr("src");
+           $("#c2").attr("src",imc1);
+           genc1();
+           ni();$("#c4").attr("src",imgx);
+           ni();$("#c5").attr("src",imgx);
+           ni();$("#c6").attr("src",imgx);
+           ni();$("#c6").attr("src",imgx);np2cc=0;pt20(); };
+
+           if (op1cc){
+            imc1=$("#c1").attr("src");
+            $("#c2").attr("src",imc1);
+            genc1();
+            ni();$("#c5").attr("src",imgx);
+            ni();$("#c6").attr("src",imgx);
+            ni();$("#c7").attr("src",imgx);op1cc=0;pt10();};
+
+           if(qp1cc){
+             genc1();
+             ni();$("#c2").attr("src",imgx);
+             ni();$("#c3").attr("src",imgx);
+             ni();$("#c5").attr("src",imgx);
+             ni();$("#c6").attr("src",imgx);
+             ni();$("#c7").attr("src",imgx);qp1cc=0;};
+
+
+//------------------------------------------------------------------------------------------
+// Series Columna console.dir();
+
+
+       if (kp1cd==1){ana10();gend1();
+       ni();$("#d2").attr("src",imgx);
+       ni();$("#d3").attr("src",imgx);
+       kp1cd=0;pt10()};
+       if (kp2cd==1){ana20();gend1();
+       ni();$("#d4").attr("src",imgx);kp1cd=0;kp2cd=0;pt20();};
+       if (kp3cd==1){ana40();gend1();
+       ni();$("#d4").attr("src",imgx);
+       ni();$("#d5").attr("src",imgx);kp3cd=0;pt40();};
+       if (kp4cd==1){ana70();gend1();
+       ni();$("#d4").attr("src",imgx);
+       ni();$("#d5").attr("src",imgx);
+       ni();$("#d6").attr("src",imgx);kp4cd=0;pt70();};
+
+       if (kp5cd==1){anb100();gend1();
+       ni();$("#d4").attr("src",imgx);
+       ni();$("#d5").attr("src",imgx);
+       ni();$("#d6").attr("src",imgx);
+       ni();$("#d7").attr("src",imgx);kp5cd=0;pt100();};
+
+       if (lp1cd==1){
+       imd1=$("#d1").attr("src");
+       $("#d5").attr("src",imd1);
+       gend1();
+       ni();$("#d2").attr("src",imgx);
+       ni();$("#d3").attr("src",imgx);lp1cd=0;pt10();};
+
+       if (lp2cd==1){
+       imd1=$("#d1").attr("src");
+       $("#d6").attr("src",imd1);
+       gend1();
+       ni();$("#d2").attr("src",imgx);
+       ni();$("#d3").attr("src",imgx);
+       ni();$("#d4").attr("src",imgx);lp2cd=0;pt20();};
+
+       if (lp3cd==1){
+       imd1=$("#d1").attr("src");
+       $("#d7").attr("src",imd1);
+       gend1();
+       ni();$("#d2").attr("src",imgx);
+       ni();$("#d3").attr("src",imgx);
+       ni();$("#d4").attr("src",imgx);
+       ni();$("#d5").attr("src",imgx);lp3cd=0;pt40();};
+
+       if (lp4cd==1){
+       gend1();
+       ni();$("#d2").attr("src",imgx);
+       ni();$("#d3").attr("src",imgx);
+       ni();$("#d4").attr("src",imgx);
+       ni();$("#d5").attr("src",imgx);lp4cd=0;pt70();};
+
+       if(mp1cd==1){
+         gend1();
+         imd1=$("#d1").attr("src");
+         imd2=$("#d2").attr("src");
+         $("#d6").attr("src",imd1);
+         $("#d7").attr("src",imd2);
+         ni();$("#d3").attr("src",imgx);
+         ni();$("#d4").attr("src",imgx);
+         ni();$("#d5").attr("src",imgx);mp1cd=0;pt10();};
+
+       if(mp2cd==1){
+         gend1();
+         imd1=$("#d1").attr("src");
+         imd2=$("#d2").attr("src");
+         $("#d2").attr("src",imd1);
+         $("#d7").attr("src",imd2);
+         ni();$("#d3").attr("src",imgx);
+         ni();$("#d4").attr("src",imgx);
+         ni();$("#d5").attr("src",imgx);
+         ni();$("#d6").attr("src",imgx);mp2cd=0;pt20();};
+
+         if(mp3cd==1){
+           imd1=$("#d1").attr("src");
+           $("#d2").attr("src",imd1);
+           gend1();
+           ni();$("#d3").attr("src",imgx);
+           ni();$("#d4").attr("src",imgx);
+           ni();$("#d5").attr("src",imgx);
+           ni();$("#d6").attr("src",imgx);
+           ni();$("#d6").attr("src",imgx);mp3cd=0;pt40();};
+
+           if(np1cd==1){
+           gend1();
+           ni();$("#d4").attr("src",imgx);
+           ni();$("#d5").attr("src",imgx);
+           ni();$("#d6").attr("src",imgx);np1cd=0;pt10();};
+
+           if(np2cd==1){
+           imd1=$("#d1").attr("src");
+           $("#d2").attr("src",imd1);
+           gend1();
+           ni();$("#d4").attr("src",imgx);
+           ni();$("#d5").attr("src",imgx);
+           ni();$("#d6").attr("src",imgx);
+           ni();$("#d6").attr("src",imgx);np2cd=0;pt20(); };
+
+           if (op1cd){
+            imd1=$("#d1").attr("src");
+            $("#d2").attr("src",imd1);
+            gend1();
+            ni();$("#d5").attr("src",imgx);
+            ni();$("#d6").attr("src",imgx);
+            ni();$("#d7").attr("src",imgx);op1cd=0;pt10();};
+
+           if(qp1cd){
+             gend1();
+             ni();$("#d2").attr("src",imgx);
+             ni();$("#d3").attr("src",imgx);
+             ni();$("#d5").attr("src",imgx);
+             ni();$("#d6").attr("src",imgx);
+             ni();$("#d7").attr("src",imgx);qp1cd=0;};
+//------------------------------------------------------------------------------------------
+// Series Columna E
+
+
+       if (kp1ce==1){ana10();gene1();
+       ni();$("#e2").attr("src",imgx);
+       ni();$("#e3").attr("src",imgx);
+       kp1ce=0;pt10()};
+       if (kp2ce==1){ana20();gene1();
+       ni();$("#e4").attr("src",imgx);kp1ce=0;kp2ce=0;pt20();};
+       if (kp3ce==1){ana40();gene1();
+       ni();$("#e4").attr("src",imgx);
+       ni();$("#e5").attr("src",imgx);kp3ce=0;pt40();};
+       if (kp4ce==1){ana70();gene1();
+       ni();$("#e4").attr("src",imgx);
+       ni();$("#e5").attr("src",imgx);
+       ni();$("#e6").attr("src",imgx);kp4ce=0;pt70();};
+
+       if (kp5ce==1){anb100();gene1();
+       ni();$("#e4").attr("src",imgx);
+       ni();$("#e5").attr("src",imgx);
+       ni();$("#e6").attr("src",imgx);
+       ni();$("#e7").attr("src",imgx);kp5ce=0;pt100();};
+
+       if (lp1ce==1){
+       ime1=$("#e1").attr("src");
+       $("#e5").attr("src",ime1);
+       gene1();
+       ni();$("#e2").attr("src",imgx);
+       ni();$("#e3").attr("src",imgx);lp1ce=0;pt10();};
+
+       if (lp2ce==1){
+       ime1=$("#e1").attr("src");
+       $("#e6").attr("src",ime1);
+       gene1();
+       ni();$("#e2").attr("src",imgx);
+       ni();$("#e3").attr("src",imgx);
+       ni();$("#e4").attr("src",imgx);lp2ce=0;pt20();};
+
+       if (lp3ce==1){
+       ime1=$("#e1").attr("src");
+       $("#e7").attr("src",ime1);
+       gene1();
+       ni();$("#e2").attr("src",imgx);
+       ni();$("#e3").attr("src",imgx);
+       ni();$("#e4").attr("src",imgx);
+       ni();$("#e5").attr("src",imgx);lp3ce=0;pt40();};
+
+       if (lp4ce==1){
+       gene1();
+       ni();$("#e2").attr("src",imgx);
+       ni();$("#e3").attr("src",imgx);
+       ni();$("#e4").attr("src",imgx);
+       ni();$("#e5").attr("src",imgx);lp4ce=0;pt70();};
+
+       if(mp1ce==1){
+         gene1();
+         ime1=$("#e1").attr("src");
+         ime2=$("#e2").attr("src");
+         $("#e6").attr("src",ime1);
+         $("#e7").attr("src",ime2);
+         ni();$("#e3").attr("src",imgx);
+         ni();$("#e4").attr("src",imgx);
+         ni();$("#e5").attr("src",imgx);mp1ce=0;pt10();};
+
+       if(mp2ce==1){
+         gene1();
+         ime1=$("#e1").attr("src");
+         ime2=$("#e2").attr("src");
+         $("#e2").attr("src",ime1);
+         $("#e7").attr("src",ime2);
+         ni();$("#e3").attr("src",imgx);
+         ni();$("#e4").attr("src",imgx);
+         ni();$("#e5").attr("src",imgx);
+         ni();$("#e6").attr("src",imgx);mp2ce=0;pt20();};
+
+         if(mp3ce==1){
+           ime1=$("#e1").attr("src");
+           $("#e2").attr("src",ime1);
+           gene1();
+           ni();$("#e3").attr("src",imgx);
+           ni();$("#e4").attr("src",imgx);
+           ni();$("#e5").attr("src",imgx);
+           ni();$("#e6").attr("src",imgx);
+           ni();$("#e6").attr("src",imgx);mp3ce=0;pt40();};
+
+           if(np1ce==1){
+           gene1();
+           ni();$("#e4").attr("src",imgx);
+           ni();$("#e5").attr("src",imgx);
+           ni();$("#e6").attr("src",imgx);np1ce=0;pt10();};
+
+           if(np2ce==1){
+           ime1=$("#e1").attr("src");
+           $("#e2").attr("src",ime1);
+           gene1();
+           ni();$("#e4").attr("src",imgx);
+           ni();$("#e5").attr("src",imgx);
+           ni();$("#e6").attr("src",imgx);
+           ni();$("#e6").attr("src",imgx);np2ce=0;pt20(); };
+
+           if (op1ce){
+            ime1=$("#e1").attr("src");
+            $("#e2").attr("src",ime1);
+            gene1();
+            ni();$("#e5").attr("src",imgx);
+            ni();$("#e6").attr("src",imgx);
+            ni();$("#e7").attr("src",imgx);op1ce=0;pt10();};
+
+           if(qp1ce){
+             gene1();
+             ni();$("#e2").attr("src",imgx);
+             ni();$("#e3").attr("src",imgx);
+             ni();$("#e5").attr("src",imgx);
+             ni();$("#e6").attr("src",imgx);
+             ni();$("#e7").attr("src",imgx);qp1ce=0;};
+
+
+//------------------------------------------------------------------------------------------
+// Series Columna F
+if (kp1cf==1){ana10();genf1();
+ni();$("#f2").attr("src",imgx);
+ni();$("#f3").attr("src",imgx);
+kp1cf=0;pt10()};
+if (kp2cf==1){ana20();genf1();
+ni();$("#f4").attr("src",imgx);kp1cf=0;kp2cf=0;pt20();};
+if (kp3cf==1){ana40();genf1();
+ni();$("#f4").attr("src",imgx);
+ni();$("#f5").attr("src",imgx);kp3cf=0;pt40();};
+if (kp4cf==1){ana70();genf1();
+ni();$("#f4").attr("src",imgx);
+ni();$("#f5").attr("src",imgx);
+ni();$("#f6").attr("src",imgx);kp4cf=0;pt70();};
+
+if (kp5cf==1){anb100();genf1();
+ni();$("#f4").attr("src",imgx);
+ni();$("#f5").attr("src",imgx);
+ni();$("#f6").attr("src",imgx);
+ni();$("#f7").attr("src",imgx);kp5cf=0;pt100();};
+
+if (lp1cf==1){
+imf1=$("#f1").attr("src");
+$("#f5").attr("src",imf1);
+genf1();
+ni();$("#f2").attr("src",imgx);
+ni();$("#f3").attr("src",imgx);lp1cf=0;pt10();};
+
+if (lp2cf==1){
+imf1=$("#f1").attr("src");
+$("#f6").attr("src",imf1);
+genf1();
+ni();$("#f2").attr("src",imgx);
+ni();$("#f3").attr("src",imgx);
+ni();$("#f4").attr("src",imgx);lp2cf=0;pt20();};
+
+if (lp3cf==1){
+imf1=$("#f1").attr("src");
+$("#f7").attr("src",imf1);
+genf1();
+ni();$("#f2").attr("src",imgx);
+ni();$("#f3").attr("src",imgx);
+ni();$("#f4").attr("src",imgx);
+ni();$("#f5").attr("src",imgx);lp3cf=0;pt40();};
+
+if (lp4cf==1){
+genf1();
+ni();$("#f2").attr("src",imgx);
+ni();$("#f3").attr("src",imgx);
+ni();$("#f4").attr("src",imgx);
+ni();$("#f5").attr("src",imgx);lp4cf=0;pt70();};
+
+if(mp1cf==1){
+  genf1();
+  imf1=$("#f1").attr("src");
+  imf2=$("#f2").attr("src");
+  $("#f6").attr("src",imf1);
+  $("#f7").attr("src",imf2);
+  ni();$("#f3").attr("src",imgx);
+  ni();$("#f4").attr("src",imgx);
+  ni();$("#f5").attr("src",imgx);mp1cf=0;pt10();};
+
+if(mp2cf==1){
+  genf1();
+  imf1=$("#f1").attr("src");
+  imf2=$("#f2").attr("src");
+  $("#f2").attr("src",imf1);
+  $("#f7").attr("src",imf2);
+  ni();$("#f3").attr("src",imgx);
+  ni();$("#f4").attr("src",imgx);
+  ni();$("#f5").attr("src",imgx);
+  ni();$("#f6").attr("src",imgx);mp2cf=0;pt20();};
+
+  if(mp3cf==1){
+    imf1=$("#f1").attr("src");
+    $("#f2").attr("src",imf1);
+    genf1();
+    ni();$("#f3").attr("src",imgx);
+    ni();$("#f4").attr("src",imgx);
+    ni();$("#f5").attr("src",imgx);
+    ni();$("#f6").attr("src",imgx);
+    ni();$("#f6").attr("src",imgx);mp3cf=0;pt40();};
+
+    if(np1cf==1){
+    genf1();
+    ni();$("#f4").attr("src",imgx);
+    ni();$("#f5").attr("src",imgx);
+    ni();$("#f6").attr("src",imgx);np1cf=0;pt10();};
+
+    if(np2cf==1){
+    imf1=$("#f1").attr("src");
+    $("#f2").attr("src",imf1);
+    genf1();
+    ni();$("#f4").attr("src",imgx);
+    ni();$("#f5").attr("src",imgx);
+    ni();$("#f6").attr("src",imgx);
+    ni();$("#f6").attr("src",imgx);np2cf=0;pt20(); };
+
+    if (op1cf){
+     imf1=$("#f1").attr("src");
+     $("#f2").attr("src",imf1);
+     genf1();
+     ni();$("#f5").attr("src",imgx);
+     ni();$("#f6").attr("src",imgx);
+     ni();$("#f7").attr("src",imgx);op1cf=0;pt10();};
+
+    if(qp1cf){
+      genf1();
+      ni();$("#f2").attr("src",imgx);
+      ni();$("#f3").attr("src",imgx);
+      ni();$("#f5").attr("src",imgx);
+      ni();$("#f6").attr("src",imgx);
+      ni();$("#f7").attr("src",imgx);qp1cf=0;};
+
+
+//------------------------------------------------------------------------------------------
+// Series Columna G
+if (kp1cg==1){ana10();geng1();
+  ni();$("#g2").attr("src",imgx);
+  ni();$("#g3").attr("src",imgx);
+  kp1cg=0;pt10()};
+
+if (kp2cg==1){ana20();geng1();
+   ni();$("#g4").attr("src",imgx);kp1cg=0;kp2cg=0;pt20();};
+
+if (kp3cg==1){ana40();geng1();
+  ni();$("#g4").attr("src",imgx);
+  ni();$("#g5").attr("src",imgx);kp3cg=0;pt40();};
+
+if (kp4cg==1){ana70();geng1();
+  ni();$("#g4").attr("src",imgx);
+  ni();$("#g5").attr("src",imgx);
+  ni();$("#g6").attr("src",imgx);kp4cg=0;pt70();};
+
+if (kp5cg==1){ana100();geng1();
+  ni();$("#g4").attr("src",imgx);
+  ni();$("#g5").attr("src",imgx);
+  ni();$("#g6").attr("src",imgx);
+  ni();$("#g7").attr("src",imgx);kp5cg=0;pt100();};
+
+if (lp1cg==1){
+img1=$("#g1").attr("src");
+$("#g5").attr("src",img1);
+geng1();
+ni();$("#g2").attr("src",imgx);
+ni();$("#g3").attr("src",imgx);lp1cg=0;pt10();};
+
+if (lp2cg==1){
+img1=$("#g1").attr("src");
+$("#g6").attr("src",img1);
+geng1();
+ni();$("#g2").attr("src",imgx);
+ni();$("#g3").attr("src",imgx);
+ni();$("#g4").attr("src",imgx);lp2cg=0;pt20();};
+
+if (lp3cg==1){
+img1=$("#g1").attr("src");
+$("#g7").attr("src",img1);
+geng1();
+ni();$("#g2").attr("src",imgx);
+ni();$("#g3").attr("src",imgx);
+ni();$("#g4").attr("src",imgx);
+ni();$("#g5").attr("src",imgx);lp3cg=0;pt40();};
+
+if (lp4cg==1){
+geng1();
+ni();$("#g2").attr("src",imgx);
+ni();$("#g3").attr("src",imgx);
+ni();$("#g4").attr("src",imgx);
+ni();$("#g5").attr("src",imgx);lp4cg=0;pt70();};
+
+if(mp1cg==1){
+  geng1();
+  img1=$("#g1").attr("src");
+  img2=$("#g2").attr("src");
+  $("#g6").attr("src",img1);
+  $("#g7").attr("src",img2);
+  ni();$("#g3").attr("src",imgx);
+  ni();$("#g4").attr("src",imgx);
+  ni();$("#g5").attr("src",imgx);mp1cg=0;pt10();};
+
+if(mp2cg==1){
+  geng1();
+  img1=$("#g1").attr("src");
+  img2=$("#g2").attr("src");
+  $("#g2").attr("src",img1);
+  $("#g7").attr("src",img2);
+  ni();$("#g3").attr("src",imgx);
+  ni();$("#g4").attr("src",imgx);
+  ni();$("#g5").attr("src",imgx);
+  ni();$("#g6").attr("src",imgx);mp2cg=0;pt20();};
+
+  if(mp3cg==1){
+    img1=$("#g1").attr("src");
+    $("#g2").attr("src",img1);
+    geng1();
+    ni();$("#g3").attr("src",imgx);
+    ni();$("#g4").attr("src",imgx);
+    ni();$("#g5").attr("src",imgx);
+    ni();$("#g6").attr("src",imgx);
+    ni();$("#g6").attr("src",imgx);mp3cg=0;pt40();};
+
+    if(np1cg==1){
+    geng1();
+    ni();$("#g4").attr("src",imgx);
+    ni();$("#g5").attr("src",imgx);
+    ni();$("#g6").attr("src",imgx);np1cg=0;pt10();};
+
+    if(np2cg==1){
+    img1=$("#g1").attr("src");
+    $("#g2").attr("src",img1);
+    geng1();
+    ni();$("#g4").attr("src",imgx);
+    ni();$("#g5").attr("src",imgx);
+    ni();$("#g6").attr("src",imgx);
+    ni();$("#g6").attr("src",imgx);np2cg=0;pt20(); };
+
+    if (op1cg){
+     img1=$("#g1").attr("src");
+     $("#g2").attr("src",img1);
+     geng1();
+     ni();$("#g5").attr("src",imgx);
+     ni();$("#g6").attr("src",imgx);
+     ni();$("#g7").attr("src",imgx);op1cg=0;pt10();};
+
+    if(qp1cg){
+      geng1();
+      ni();$("#g2").attr("src",imgx);
+      ni();$("#g3").attr("src",imgx);
+      ni();$("#g5").attr("src",imgx);
+      ni();$("#g6").attr("src",imgx);
+      ni();$("#g7").attr("src",imgx);qp1cg=0;};
+
+//------------------------------------------------------------------------------------------
 };// □□□□□□  Fin Modulo 5 □□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
 
 
@@ -1095,13 +1854,17 @@ if (a7==4){$("#a7").attr("src","image/4.png");} if (b7==4){$("#b7").attr("src","
 // □□□□□□  Fin 7 □□□□□□
 
 // □□□□□□  8  Funciones Generales □□□□□□
- function nx (){numx=Math.floor((Math.random() * 4) + 1)}; // Genracion de Numero aleatorio de 1 A 4♪
- function ni (){nx();imgx=[imebas.slice(0,6),numx,imebas.slice(7,11)] .join("")}
-  function gena1(){
-    $("#a1").css("top","-40px");
-    $("#a1").css("left","0px");
-    $("#a1").animate({top:"0px"},500);
-    ni();$("#a1").attr("src",imgx);}
+function nx (){numx=Math.floor((Math.random() * 4) + 1)}; // Genracion de Numero aleatorio de 1 A 4♪
+function ni (){nx();imgx=[imebas.slice(0,6),numx,imebas.slice(7,11)] .join("")}
+function gena1(){$("#a1").css("top","-40px");$("#a1").css("left","0px");$("#a1").animate({top:"0px"},500); ni();$("#a1").attr("src",imgx);}
+function genb1(){$("#b1").css("top","-40px");$("#b1").css("left","0px");$("#b1").animate({top:"0px"},500); ni();$("#b1").attr("src",imgx);}
+function genc1(){$("#c1").css("top","-40px");$("#c1").css("left","0px");$("#c1").animate({top:"0px"},500); ni();$("#c1").attr("src",imgx);}
+function gend1(){$("#d1").css("top","-40px");$("#d1").css("left","0px");$("#d1").animate({top:"0px"},500); ni();$("#d1").attr("src",imgx);}
+function gene1(){$("#e1").css("top","-40px");$("#e1").css("left","0px");$("#e1").animate({top:"0px"},500); ni();$("#e1").attr("src",imgx);}
+function genf1(){$("#f1").css("top","-40px");$("#f1").css("left","0px");$("#f1").animate({top:"0px"},500); ni();$("#f1").attr("src",imgx);}
+function geng1(){$("#g1").css("top","-40px");$("#g1").css("left","0px");$("#g1").animate({top:"0px"},500); ni();$("#g1").attr("src",imgx);}
+
+
   function pt10(){pts=pts+10;$("#score-text").text(pts);};
   function pt20(){pts=pts+10;$("#score-text").text(pts);};
   function pt40(){pts=pts+20;$("#score-text").text(pts);};
@@ -1109,14 +1872,17 @@ if (a7==4){$("#a7").attr("src","image/4.png");} if (b7==4){$("#b7").attr("src","
   function pt100(){pts=pts+30;$("#score-text").text(pts);};
 
   function cronometro(){ s=60; m=1;
-  if ((parada=="no")&&(ct=="ini")){mycounter=setInterval(counter,50);};
+  if ((parada=="no")&&(ct=="ini")){mycounter=setInterval(counter,500);};
   if (ct=="uno"){reaccend();ct="ini"};
-  if (parada=="si"){reaccend();};};
+  if (parada=="si"){reaccend();};
+  };
+
 
   function counter(){s=s-1;if(s==0){m=0;s=59};
   $("#timer").text("0"+m+":"+s);
   if((s==1)&&(m==0)){parada="si";clearInterval(mycounter);$("#timer").text(" Ohh tiempo agotado!");}
-  if(parada=="si"){setTimeout(accend,2000);};  }
+  if(parada=="si"){setTimeout(accend,2000);};
+  }
 
   function accend(){
   $(".elemento").hide();
@@ -1129,32 +1895,17 @@ if (a7==4){$("#a7").attr("src","image/4.png");} if (b7==4){$("#b7").attr("src","
   $(".btn-reinicio").text("Re-Iniciar");
   parada="si"};
 
+
   function reaccend (){
-  location.reload()};
-
- function ani10(){
-
-  $("#a2").animate({width:"100px",height:"100px"},200)
-  $("#a2").animate({width:"90px",height:"90px"},200)
-  $("#a2").effect("bounce");
-  $("#a3").animate({width:"100px",height:"100px"},200)
-  $("#a3").animate({width:"90px",height:"90px"},200)
-  $("#a3").effect("bounce"); }
-
-  function ani20(){
-
-   $("#a2").animate({width:"100px",height:"100px"},200)
-   $("#a2").animate({width:"90px",height:"90px"},200)
-   $("#a2").effect("bounce");
-   $("#a3").animate({width:"100px",height:"100px"},200)
-   $("#a3").animate({width:"90px",height:"90px"},200)
-   $("#a3").effect("bounce");
-   $("#a4").animate({width:"100px",height:"100px"},200)
-   $("#a4").animate({width:"90px",height:"90px"},200)
-   $("#a4").effect("bounce");
-           }
+    location.reload()};
 
 
+// nemonico: animacion columna a puntos 10 ,20 , 40 , 70 , 100
+function ana10(){};
+function ana20(){};
+function ana40(){};
+function ana70(){};
+function ana100(){};
 
 
 

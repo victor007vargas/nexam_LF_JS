@@ -22,6 +22,7 @@ var np1cf; var np2cf; var op1cf ; var qp1cf;
 var kp1cg; var kp2cg; var kp3cg; var kp4cg; var kp5cg;
 var lp1cg; var lp2cg; var lp3cg; var lp4cg; var mp1cg; var mp2cg; var mp3cg;
 var np1cg; var np2cg; var op1cg ; var qp1cg;
+var kp1f=0;
 
 var numa = [];numb = []; numc = [];numd =[];nume =[];numf=[]; numg = [];
 var cola = [a1,a2,a3,a4,a5,a6,a7] ;
@@ -61,9 +62,9 @@ flagdrop=1; if (flagdrop==1){deteceries();flagdrop=0;};mov=mov+1;$("#movimientos
 $(".btn-reinicio").click(function(){init();asiale();cronometro();ct="uno"})
 
 // ⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂ Botones de Prueba
-$(".bt2").click(function(){          });
+$(".bt2").click(function(){ alert("Variable kp1f:"+kp1f)         });
 
-$(".bt1").click(function(){reaccend()});
+$(".bt1").click(function(){ alert("Imagen a1:"+ica1+"\nImagen b1:"+icb1+"\nImagen c1:"+icc1)         });
 //⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂⌂Fin de Botoner de prueba
 // □□□□□□ Fin 4   □□□□□
 
@@ -125,6 +126,32 @@ if ((icg4==icg3)&&(icg5==icg4)){mp1cg=1;if (icg6==icg5){mp1cg=0;mp2cg=1;if(icg7=
 if ((icg5==icg4)&&(icg6==icg5)){np1cg=1;if (icg7==icg6){np1cg=0;np2cg=1};};
 if ((icg6==icg5)&&(icg7==icg6)){op1cg=1};
 //--------------------------------------------------------------------
+//---------------- Logica  imagenes fila 1 -------------------
+if ((icb2==ica1)&&(icc1==icb1)){kp1f=1;if (icd1==icc1){kp1f=0;kp2f=1;if(ice1==icd1){kp2f=0;kp3f=1;if(icf1==ice1){kp3f=0;kp4f=1;if(icg1==icf1){kp4f=0;kp5f=1};};};};};
+//if ((ica3==ica2)&&(ica4==ica3)){lp1ca=1;if (ica5==ica4){lp1ca=0;lp2ca=1;if(ica6==ica5){lp2ca=0;lp3ca=1;if(ica7===ica6){lp3ca=0;lp4ca=1};};};};
+//if ((ica4==ica3)&&(ica5==ica4)){mp1ca=1;if (ica6==ica5){mp1ca=0;mp2ca=1;if(ica7==ica6){mp2ca=0;mp3ca=1};};};
+//if ((ica5==ica4)&&(ica6==ica5)){np1ca=1;if (ica7==ica6){np1ca=0;np2ca=1};};
+//if ((ica6==ica5)&&(ica7==ica6)){op1ca=1};
+//---------------- Logica  imagenes fila 2 -------------------
+
+  //---------------- Logica  imagenes fila 3 -------------------
+
+//---------------- Logica  imagenes fila 4 -------------------
+
+//---------------- Logica  imagenes fila 5 -------------------
+
+//---------------- Logica  imagenes fila 6 -------------------
+
+//---------------- Logica  imagenes fila 7 -------------------
+
+
+// Series Fila 1
+if (kp1f==1){ana10();genf1();
+    kp1f=0;pt10()};
+
+//---------------------------------------------------------
+
+
 // Series Columna A
 if (kp1ca==1){ana10();gena1();
   ni();$("#a2").attr("src",imgx);
@@ -1863,6 +1890,10 @@ function gend1(){$("#d1").css("top","-40px");$("#d1").css("left","0px");$("#d1")
 function gene1(){$("#e1").css("top","-40px");$("#e1").css("left","0px");$("#e1").animate({top:"0px"},500); ni();$("#e1").attr("src",imgx);}
 function genf1(){$("#f1").css("top","-40px");$("#f1").css("left","0px");$("#f1").animate({top:"0px"},500); ni();$("#f1").attr("src",imgx);}
 function geng1(){$("#g1").css("top","-40px");$("#g1").css("left","0px");$("#g1").animate({top:"0px"},500); ni();$("#g1").attr("src",imgx);}
+function genf1(){ gena1();genb1();genc1();}
+
+
+
 
 
   function pt10(){pts=pts+10;$("#score-text").text(pts);};
@@ -1870,6 +1901,9 @@ function geng1(){$("#g1").css("top","-40px");$("#g1").css("left","0px");$("#g1")
   function pt40(){pts=pts+20;$("#score-text").text(pts);};
   function pt70(){pts=pts+30;$("#score-text").text(pts);};
   function pt100(){pts=pts+30;$("#score-text").text(pts);};
+
+
+
 
   function cronometro(){ s=60; m=1;
   if ((parada=="no")&&(ct=="ini")){mycounter=setInterval(counter,500);};
